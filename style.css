@@ -4,11 +4,32 @@
     box-sizing: border-box;
     background-color: #cfe4f2;
 }
-
-body{
-    font-family: fantasy;
+ul{
+    min-width: 20px;
+    list-style: none;
+    display: right;
+    
 }
 
+.container-navbar{
+    background-color: white;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+li{
+    text-align: center;
+    padding-right: 10px;
+    display: inline;
+    
+}
+body{
+    font-family: fantasy;   
+}
 .input{
     text-align: center;
 }
