@@ -29,9 +29,11 @@ header
     justify-content: space-evenly;
     padding: 20px;
 }
+
 /* moves the "weather app text to the very top left corner*/
 header h1 
 {
+    display: flex;
    margin-top: -25;
    text-align: left;
    width: 1900px;
@@ -51,8 +53,9 @@ body
 .input
 {
     text-align: center;
-}
 
+}
+/*made the search bar look better*/
 input[type="text"]
 {
     height: 50px;
@@ -61,5 +64,34 @@ input[type="text"]
     font-family: sans-serif;
     font-weight: bolder;
     font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: #313131; 
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid rgba(161, 187, 209, 0.75) ;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2 ease-out;
+    
+}
+/* made the tempature and weather size bigger and added a shadow*/
+main
+{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.current .temp
+{
+    font-size: 50;
+    text-shadow: 2px 8px rgba(58, 53, 128, 0.75)
+}
+.weather
+{
 
+    font-size: 25px;
+    text-shadow: 2px 8px rgba(58, 53, 128, 0.75)
 }
